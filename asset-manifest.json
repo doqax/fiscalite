@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fiscalite/static/css/main.e6c13ad2.css",
+    "main.js": "/fiscalite/static/js/main.cd451024.js",
+    "static/js/787.4b662bf7.chunk.js": "/fiscalite/static/js/787.4b662bf7.chunk.js",
+    "index.html": "/fiscalite/index.html",
+    "main.e6c13ad2.css.map": "/fiscalite/static/css/main.e6c13ad2.css.map",
+    "main.cd451024.js.map": "/fiscalite/static/js/main.cd451024.js.map",
+    "787.4b662bf7.chunk.js.map": "/fiscalite/static/js/787.4b662bf7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.cd451024.js"
+  ]
+}
