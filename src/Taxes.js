@@ -29,7 +29,7 @@ export default function Taxes({ globalNet, children, anticipatedPayment }) {
       <Box
         my={3}
         display="grid"
-        gridTemplateColumns="1fr 200px 200px"
+        gridTemplateColumns={["1fr 1fr 1fr", "1fr 200px 200px"]}
         gridGap="18px 24px"
         maxWidth="1024px"
         mx="auto"
@@ -56,7 +56,7 @@ export default function Taxes({ globalNet, children, anticipatedPayment }) {
       <Box
         my={3}
         display="grid"
-        gridTemplateColumns="1fr 200px 200px"
+        gridTemplateColumns={["1fr 1fr 1fr", "1fr 200px 200px"]}
         gridGap="18px 24px"
         maxWidth="1024px"
         mx="auto"
@@ -74,7 +74,7 @@ export default function Taxes({ globalNet, children, anticipatedPayment }) {
       <Box
         my={3}
         display="grid"
-        gridTemplateColumns="1fr 424px"
+        gridTemplateColumns={["1fr 2fr", "1fr 424px"]}
         gridGap="18px 24px"
         maxWidth="1024px"
         mx="auto"
@@ -98,7 +98,7 @@ export default function Taxes({ globalNet, children, anticipatedPayment }) {
       <Box
         my={3}
         display="grid"
-        gridTemplateColumns="1fr 200px 200px"
+        gridTemplateColumns={["1fr 1fr 1fr", "1fr 200px 200px"]}
         gridGap="18px 24px"
         maxWidth="1024px"
         mx="auto"
@@ -116,18 +116,22 @@ export default function Taxes({ globalNet, children, anticipatedPayment }) {
         <Text>Précompte professionnel déjà retenu :</Text>
         <Answer>{globalNet[0] * 0.3331}</Answer>
         <Answer>{globalNet[1] * 0.3331}</Answer>
-        <Pagehead></Pagehead>
-        <Box />
-        <Box />
+      </Box>
+      <Pagehead></Pagehead>
+      <Box
+        my={3}
+        display="grid"
+        gridTemplateColumns={["1fr 2fr", "1fr 424px"]}
+        gridGap="18px 24px"
+        maxWidth="1024px"
+        mx="auto"
+      >
         <Text>Total Précomptes professionnels :</Text>
         <Answer>{precountTotal}</Answer>
-        <Box />
         <Text>Impôts à payer (NET) : </Text>
         <Answer>{total - precountTotal}</Answer>
-        <Box />
         <Text>Versements anticipés :</Text>
         <Answer>{anticipatedPayment}</Answer>
-        <Box />
         <Text>Impôts final restant à payer :</Text>
         <Answer>{total - precountTotal - anticipatedPayment}</Answer>
       </Box>

@@ -19,7 +19,7 @@ export default function BaseTable({
       <Box
         my={3}
         display="grid"
-        gridTemplateColumns="1fr 200px 200px"
+        gridTemplateColumns={["1fr 1fr 1fr","1fr 200px 200px"]}
         gridGap="18px 24px"
         maxWidth="1024px"
         mx="auto"
@@ -58,7 +58,7 @@ export default function BaseTable({
       <Box
         my={3}
         display="grid"
-        gridTemplateColumns="1fr 200px 200px"
+        gridTemplateColumns={["1fr 1fr 1fr","1fr 200px 200px"]}
         gridGap="18px 24px"
         maxWidth="1024px"
         mx="auto"
@@ -88,7 +88,7 @@ export default function BaseTable({
       <Box
         my={3}
         display="grid"
-        gridTemplateColumns="1fr 200px 200px"
+        gridTemplateColumns={["1fr 1fr 1fr","1fr 200px 200px"]}
         gridGap="18px 24px"
         maxWidth="1024px"
         mx="auto"
